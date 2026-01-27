@@ -153,12 +153,13 @@ export default function Index() {
           </div>
 
           {/* Professional Summary */}
-          <section className="mb-12 lg:mb-16">
-            <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 border border-border">
-              <h2 className="text-3xl font-bold text-primary mb-5">
+          <section className="mb-12 lg:mb-16 fade-in-up" style={{animationDelay: '0.3s'}}>
+            <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-border hover-lift group relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-blue-100 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+              <h2 className="text-3xl font-bold text-primary mb-5 relative z-10">
                 Professional Summary
               </h2>
-              <p className="text-foreground leading-relaxed text-lg space-y-4">
+              <p className="text-foreground leading-relaxed text-lg space-y-4 relative z-10">
                 Passionate HR professional with expertise in building and managing
                 high-performing teams. Specialized in full-cycle recruitment,
                 employee engagement, and strategic HR operations. Committed to
