@@ -126,7 +126,7 @@ export default function Certificates() {
             Additional Qualifications
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
             {[
               {
                 title: "MBA in Human Resources",
@@ -149,8 +149,8 @@ export default function Certificates() {
                 details: "Participated in global HR conferences and training sessions",
               },
             ].map((item, idx) => (
-              <div key={idx} className="border-l-4 border-accent pl-6 py-4">
-                <h4 className="text-lg font-bold text-foreground mb-1">{item.title}</h4>
+              <div key={idx} className="border-l-4 border-accent pl-6 py-4 slide-in-left hover-lift transition-all duration-300" style={{animationDelay: `${1.2 + idx * 0.1}s`}}>
+                <h4 className="text-lg font-bold text-foreground mb-1 group-hover:text-secondary transition-colors">{item.title}</h4>
                 <p className="text-purple-600 font-semibold mb-2">{item.org}</p>
                 <p className="text-muted-foreground">{item.details}</p>
               </div>
@@ -159,13 +159,14 @@ export default function Certificates() {
         </div>
 
         {/* CTA */}
-        <div className="mt-12 text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-6">Want to Know More?</h3>
+        <div className="mt-12 text-center fade-in-up" style={{animationDelay: '1.6s'}}>
+          <h3 className="text-2xl font-bold text-foreground mb-6 bounce-in" style={{animationDelay: '1.7s'}}>Want to Know More?</h3>
           <a
             href="/contact"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:shadow-lg transition-all duration-300"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 hover-lift group relative overflow-hidden"
           >
-            Get In Touch
+            <span className="relative z-10">Get In Touch</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
         </div>
       </div>
