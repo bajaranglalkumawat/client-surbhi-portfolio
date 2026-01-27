@@ -54,15 +54,20 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-background to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-background to-blue-50 relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-br from-teal-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{animationDelay: '4s'}}></div>
+
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-8 relative z-10">
         {/* Left Sidebar - Contact Info */}
-        <div className="lg:col-span-1 bg-gradient-to-br from-purple-600 via-blue-600 to-teal-500 text-primary-foreground p-8 lg:sticky lg:top-20 lg:h-fit lg:overflow-y-auto rounded-b-3xl lg:rounded-2xl">
+        <div className="lg:col-span-1 bg-gradient-to-br from-purple-600 via-blue-600 to-teal-500 text-primary-foreground p-8 lg:sticky lg:top-20 lg:h-fit lg:overflow-y-auto rounded-b-3xl lg:rounded-2xl shadow-2xl transform transition-all duration-300 slide-in-left hover-lift">
           <div className="space-y-8">
             {/* Profile Image */}
             <div className="flex justify-center">
-              <div className="w-40 h-40 rounded-2xl bg-white/20 backdrop-blur-sm overflow-hidden border-4 border-white/30 shadow-xl">
+              <div className="w-40 h-40 rounded-2xl bg-white/20 backdrop-blur-sm overflow-hidden border-4 border-white/30 shadow-xl hover-lift float glow-effect">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F14afa3b7489b4bb2bfe41ff4aff8b2e6%2Ff25cd4716bf64c0fafd2c67799ec6191?format=webp&width=800&height=1200"
                   alt="Surbhi Prajapati"
