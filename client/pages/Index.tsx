@@ -236,8 +236,18 @@ export default function Index() {
           </section>
 
           {/* Footer */}
-          <div className="pt-8 border-t border-border text-center text-muted-foreground text-sm">
-            <p>© 2025 Surbhi Prajapati. All rights reserved.</p>
+          <div className="pt-12 mt-12 border-t border-border text-center">
+            <p className="text-muted-foreground text-sm mb-4">© 2025 Surbhi Prajapati. All rights reserved.</p>
+            <div className="flex justify-center gap-6">
+              <a href="mailto:prajapatisurbhi8@gmail.com" className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-colors">
+                <Mail className="w-4 h-4" />
+                Email
+              </a>
+              <a href="https://www.linkedin.com/in/surbhiprajapati-4a5589238" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-colors">
+                <Linkedin className="w-4 h-4" />
+                LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </div>
