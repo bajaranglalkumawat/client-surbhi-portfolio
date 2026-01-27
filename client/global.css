@@ -134,23 +134,227 @@
 
 @layer components {
   .skill-badge {
-    @apply inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-accent/10 to-secondary/10 text-muted-foreground text-sm font-semibold border border-accent/20 hover:border-accent/40 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-default;
+    @apply inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-accent/10 to-secondary/10 text-muted-foreground text-sm font-semibold border border-accent/20 hover:border-accent/40 hover:shadow-md hover:scale-105 transition-all duration-300 cursor-default animate-fade-in;
   }
 
   .section-divider {
-    @apply my-8 md:my-12 h-px bg-gradient-to-r from-transparent via-border to-transparent;
+    @apply my-8 md:my-12 h-px bg-gradient-to-r from-transparent via-border to-transparent animate-pulse;
   }
 
   .portfolio-link {
-    @apply text-secondary font-semibold hover:text-accent transition-all duration-200 hover:underline;
+    @apply text-secondary font-semibold hover:text-accent transition-all duration-300 hover:underline;
   }
 
   .experience-card {
-    @apply border-l-4 border-accent pl-6 pb-8 relative transition-all duration-300;
+    @apply border-l-4 border-accent pl-6 pb-8 relative transition-all duration-500 hover:shadow-2xl hover:scale-102 animate-slide-in-up;
   }
 
   .experience-card::before {
     content: '';
-    @apply absolute -left-3 top-0 w-6 h-6 bg-accent rounded-full shadow-lg;
+    @apply absolute -left-3 top-0 w-6 h-6 bg-accent rounded-full shadow-lg animate-pulse;
+  }
+
+  /* Animated gradient background */
+  .animated-gradient-bg {
+    @apply relative overflow-hidden;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  /* Floating animation */
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Glow effect */
+  .glow-effect {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+
+  /* Slide in animations */
+  .slide-in-left {
+    animation: slide-in-left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .slide-in-right {
+    animation: slide-in-right 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .slide-in-up {
+    animation: slide-in-up 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Fade animations */
+  .fade-in {
+    animation: fade-in 0.6s ease-in;
+  }
+
+  .fade-in-up {
+    animation: fade-in-up 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Bounce animation */
+  .bounce-in {
+    animation: bounce-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Rotate animation */
+  .rotate-in {
+    animation: rotate-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Scale animation */
+  .scale-in {
+    animation: scale-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Shimmer animation */
+  .shimmer {
+    animation: shimmer 2s infinite;
+  }
+
+  /* Hover lift effect */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+  }
+
+  /* Button animations */
+  .btn-glow {
+    @apply relative overflow-hidden;
+  }
+
+  .btn-glow::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent opacity-0 group-hover:opacity-100;
+    animation: shimmer 2s infinite;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(168, 85, 247, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    opacity: 0;
+    transform: rotate(-10deg) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
