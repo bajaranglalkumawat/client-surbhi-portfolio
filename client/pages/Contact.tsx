@@ -97,8 +97,9 @@ export default function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-          <h2 className="text-3xl font-bold text-foreground mb-8">Send Me a Message</h2>
+        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg hover:shadow-2xl transition-all duration-500 fade-in-up group overflow-hidden relative" style={{animationDelay: '0.6s'}}>
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-transparent opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+          <h2 className="text-3xl font-bold text-foreground mb-8 relative z-10 bounce-in">Send Me a Message</h2>
 
           {submitted && (
             <div className="mb-6 p-4 bg-green-100 text-green-700 rounded-lg border border-green-300">
