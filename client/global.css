@@ -12,9 +12,9 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 250 30% 97%;
+    --background:#2C3E50 ;
     --foreground: 250 20% 15%;
-
+ 
     --card: 0 0% 100%;
     --card-foreground: 250 20% 15%;
 
