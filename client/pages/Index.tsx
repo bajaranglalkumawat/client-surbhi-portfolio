@@ -137,27 +137,29 @@ export default function Index() {
           </div>
 
           {/* Professional Summary */}
-          <section className="mb-8 lg:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-              Professional Summary
-            </h2>
-            <p className="text-foreground leading-relaxed text-base md:text-lg">
-              Passionate HR professional with expertise in building and managing
-              high-performing teams. Specialized in full-cycle recruitment,
-              employee engagement, and strategic HR operations. Committed to
-              creating people-first cultures that drive organizational success
-              and employee satisfaction.
-            </p>
+          <section className="mb-12 lg:mb-16">
+            <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 border border-border">
+              <h2 className="text-3xl font-bold text-primary mb-5">
+                Professional Summary
+              </h2>
+              <p className="text-foreground leading-relaxed text-lg space-y-4">
+                Passionate HR professional with expertise in building and managing
+                high-performing teams. Specialized in full-cycle recruitment,
+                employee engagement, and strategic HR operations. Committed to
+                creating people-first cultures that drive organizational success
+                and employee satisfaction.
+              </p>
+            </div>
           </section>
 
           <div className="section-divider"></div>
 
           {/* Skills Section */}
-          <section className="mb-8 lg:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-              Skills
+          <section className="mb-12 lg:mb-16">
+            <h2 className="text-3xl font-bold text-primary mb-8">
+              Core Competencies
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {skills.map((skill, index) => (
                 <div key={index} className="skill-badge">
                   {skill}
