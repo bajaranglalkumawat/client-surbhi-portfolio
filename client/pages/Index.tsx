@@ -237,33 +237,36 @@ export default function Index() {
           <div className="section-divider"></div>
 
           {/* Education Section */}
-          <section className="mb-12 lg:mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-8">
+          <section className="mb-12 lg:mb-16 fade-in-up" style={{animationDelay: '1s'}}>
+            <h2 className="text-3xl font-bold text-primary mb-8 bounce-in" style={{animationDelay: '1.1s'}}>
               Education
             </h2>
-            <div className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 transition-all duration-300">
-              <h3 className="text-2xl font-bold text-primary mb-2">
-                Suresh Gyan Vihar University
-              </h3>
-              <p className="text-secondary font-semibold text-lg mb-3">
-                Master of Business Administration - MBA
-              </p>
-              <p className="text-foreground mb-2">
-                Human Resources Management and Services
-              </p>
-              <p className="text-muted-foreground font-medium">📍 India</p>
+            <div className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 group relative overflow-hidden" style={{animationDelay: '1.2s'}}>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-blue-100 opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+              <div className="relative z-10">
+                <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors duration-300">
+                  Suresh Gyan Vihar University
+                </h3>
+                <p className="text-secondary font-semibold text-lg mb-3">
+                  Master of Business Administration - MBA
+                </p>
+                <p className="text-foreground mb-2">
+                  Human Resources Management and Services
+                </p>
+                <p className="text-muted-foreground font-medium">📍 India</p>
+              </div>
             </div>
           </section>
 
           {/* Footer */}
-          <div className="pt-12 mt-12 border-t border-border text-center">
+          <div className="pt-12 mt-12 border-t border-border text-center fade-in-up" style={{animationDelay: '1.3s'}}>
             <p className="text-muted-foreground text-sm mb-4">© 2025 Surbhi Prajapati. All rights reserved.</p>
             <div className="flex justify-center gap-6">
-              <a href="mailto:prajapatisurbhi8@gmail.com" className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-colors">
+              <a href="mailto:prajapatisurbhi8@gmail.com" className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-all duration-300 hover:scale-110 hover-lift">
                 <Mail className="w-4 h-4" />
                 Email
               </a>
-              <a href="https://www.linkedin.com/in/surbhiprajapati-4a5589238" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-colors">
+              <a href="https://www.linkedin.com/in/surbhiprajapati-4a5589238" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-all duration-300 hover:scale-110 hover-lift">
                 <Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
