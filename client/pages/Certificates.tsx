@@ -41,14 +41,18 @@ export default function Certificates() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-background to-blue-50 pt-8 pb-12">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-background to-blue-50 pt-8 pb-12 relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-purple-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tr from-teal-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4">
+        <div className="mb-12 fade-in-up">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4 bounce-in">
             Certifications & Credentials
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-muted-foreground fade-in-up" style={{animationDelay: '0.2s'}}>
             Professional development and industry-recognized certifications
           </p>
         </div>
