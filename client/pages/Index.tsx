@@ -171,27 +171,29 @@ export default function Index() {
           <div className="section-divider"></div>
 
           {/* Experience Section */}
-          <section className="mb-8 lg:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-              Experience
+          <section className="mb-12 lg:mb-16">
+            <h2 className="text-3xl font-bold text-primary mb-8">
+              Professional Experience
             </h2>
-            <div className="space-y-8">
+            <div className="space-y-10">
               {experience.map((job, index) => (
-                <div key={index} className="border-l-4 border-accent pl-6">
-                  <h3 className="text-xl font-bold text-primary mb-1">
+                <div key={index} className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 transition-all duration-300">
+                  <h3 className="text-2xl font-bold text-primary mb-1">
                     {job.company}
                   </h3>
-                  <p className="text-secondary font-semibold mb-1">
+                  <p className="text-secondary font-semibold text-lg mb-2">
                     {job.title}
                   </p>
-                  <p className="text-muted-foreground text-sm mb-2">
-                    {job.duration}
-                  </p>
-                  <p className="text-muted-foreground text-sm mb-3">
-                    {job.location}
-                  </p>
+                  <div className="flex flex-col md:flex-row gap-3 mb-4">
+                    <p className="text-muted-foreground font-medium text-sm">
+                      📅 {job.duration}
+                    </p>
+                    <p className="text-muted-foreground font-medium text-sm">
+                      📍 {job.location}
+                    </p>
+                  </div>
                   {job.description && (
-                    <p className="text-foreground leading-relaxed mb-3">
+                    <p className="text-foreground leading-relaxed mb-4 text-base">
                       {job.description}
                     </p>
                   )}
@@ -200,7 +202,7 @@ export default function Index() {
                       {job.highlights.map((highlight, hIdx) => (
                         <span
                           key={hIdx}
-                          className="text-xs bg-accent/10 text-accent px-2 py-1 rounded"
+                          className="text-xs font-semibold bg-gradient-to-r from-accent/20 to-secondary/20 text-secondary px-3 py-1.5 rounded-full border border-secondary/30"
                         >
                           {highlight}
                         </span>
@@ -215,19 +217,21 @@ export default function Index() {
           <div className="section-divider"></div>
 
           {/* Education Section */}
-          <section className="mb-8 lg:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+          <section className="mb-12 lg:mb-16">
+            <h2 className="text-3xl font-bold text-primary mb-8">
               Education
             </h2>
-            <div className="border-l-4 border-accent pl-6">
-              <h3 className="text-xl font-bold text-primary mb-1">
+            <div className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 transition-all duration-300">
+              <h3 className="text-2xl font-bold text-primary mb-2">
                 Suresh Gyan Vihar University
               </h3>
-              <p className="text-secondary font-semibold mb-2">
-                Master of Business Administration - MBA, Human Resources
-                Management and Services
+              <p className="text-secondary font-semibold text-lg mb-3">
+                Master of Business Administration - MBA
               </p>
-              <p className="text-muted-foreground">India</p>
+              <p className="text-foreground mb-2">
+                Human Resources Management and Services
+              </p>
+              <p className="text-muted-foreground font-medium">📍 India</p>
             </div>
           </section>
 
