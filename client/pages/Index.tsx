@@ -188,44 +188,47 @@ export default function Index() {
           <div className="section-divider"></div>
 
           {/* Experience Section */}
-          <section className="mb-12 lg:mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-8">
+          <section className="mb-12 lg:mb-16 fade-in-up" style={{animationDelay: '0.5s'}}>
+            <h2 className="text-3xl font-bold text-primary mb-8 bounce-in" style={{animationDelay: '0.6s'}}>
               Professional Experience
             </h2>
             <div className="space-y-10">
               {experience.map((job, index) => (
-                <div key={index} className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 transition-all duration-300">
-                  <h3 className="text-2xl font-bold text-primary mb-1">
-                    {job.company}
-                  </h3>
-                  <p className="text-secondary font-semibold text-lg mb-2">
-                    {job.title}
-                  </p>
-                  <div className="flex flex-col md:flex-row gap-3 mb-4">
-                    <p className="text-muted-foreground font-medium text-sm">
-                      📅 {job.duration}
+                <div key={index} className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 group relative overflow-hidden" style={{animationDelay: `${0.7 + index * 0.15}s`}}>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-blue-100 opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <h3 className="text-2xl font-bold text-primary mb-1 group-hover:text-secondary transition-colors duration-300">
+                      {job.company}
+                    </h3>
+                    <p className="text-secondary font-semibold text-lg mb-2">
+                      {job.title}
                     </p>
-                    <p className="text-muted-foreground font-medium text-sm">
-                      📍 {job.location}
-                    </p>
-                  </div>
-                  {job.description && (
-                    <p className="text-foreground leading-relaxed mb-4 text-base">
-                      {job.description}
-                    </p>
-                  )}
-                  {job.highlights && (
-                    <div className="flex flex-wrap gap-2">
-                      {job.highlights.map((highlight, hIdx) => (
-                        <span
-                          key={hIdx}
-                          className="text-xs font-semibold bg-gradient-to-r from-accent/20 to-secondary/20 text-secondary px-3 py-1.5 rounded-full border border-secondary/30"
-                        >
-                          {highlight}
-                        </span>
-                      ))}
+                    <div className="flex flex-col md:flex-row gap-3 mb-4">
+                      <p className="text-muted-foreground font-medium text-sm">
+                        📅 {job.duration}
+                      </p>
+                      <p className="text-muted-foreground font-medium text-sm">
+                        📍 {job.location}
+                      </p>
                     </div>
-                  )}
+                    {job.description && (
+                      <p className="text-foreground leading-relaxed mb-4 text-base">
+                        {job.description}
+                      </p>
+                    )}
+                    {job.highlights && (
+                      <div className="flex flex-wrap gap-2">
+                        {job.highlights.map((highlight, hIdx) => (
+                          <span
+                            key={hIdx}
+                            className="text-xs font-semibold bg-gradient-to-r from-accent/20 to-secondary/20 text-secondary px-3 py-1.5 rounded-full border border-secondary/30 hover-lift transition-all duration-300"
+                          >
+                            {highlight}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
