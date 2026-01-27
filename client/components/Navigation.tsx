@@ -23,7 +23,9 @@ export default function Navigation() {
             <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
               <span className="text-purple-600 font-bold text-lg">SP</span>
             </div>
-            <span className="hidden sm:inline text-white font-bold text-lg">Surbhi</span>
+            <span className="hidden sm:inline text-white font-bold text-lg">
+              Surbhi
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

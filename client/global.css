@@ -150,7 +150,7 @@
   }
 
   .experience-card::before {
-    content: '';
+    content: "";
     @apply absolute -left-3 top-0 w-6 h-6 bg-accent rounded-full shadow-lg animate-pulse;
   }
 
@@ -225,7 +225,7 @@
   }
 
   .btn-glow::before {
-    content: '';
+    content: "";
     @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent opacity-0 group-hover:opacity-100;
     animation: shimmer 2s infinite;
   }

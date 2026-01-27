@@ -25,7 +25,8 @@ export default function Index() {
     },
     {
       company: "Bot Consulting",
-      title: "Talent Acquisition Partner | Strategic Recruitment | Employer Branding | Talent Management",
+      title:
+        "Talent Acquisition Partner | Strategic Recruitment | Employer Branding | Talent Management",
       duration: "May 2024 - June 2025 (1 year 2 months)",
       location: "Jaipur, Rajasthan, India",
       description:
@@ -57,8 +58,14 @@ export default function Index() {
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-background to-blue-50 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
-      <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-br from-teal-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{animationDelay: '4s'}}></div>
+      <div
+        className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"
+        style={{ animationDelay: "2s" }}
+      ></div>
+      <div
+        className="absolute top-1/2 left-1/2 w-96 h-96 bg-gradient-to-br from-teal-200 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"
+        style={{ animationDelay: "4s" }}
+      ></div>
 
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-8 relative z-10">
@@ -102,7 +109,9 @@ export default function Index() {
                 </div>
                 <div className="flex gap-3 items-start">
                   <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <span className="text-blue-100">Jaipur, Rajasthan, India</span>
+                  <span className="text-blue-100">
+                    Jaipur, Rajasthan, India
+                  </span>
                 </div>
               </div>
             </div>
@@ -111,9 +120,18 @@ export default function Index() {
             <div className="pt-6 border-t border-white/20">
               <h3 className="text-lg font-bold mb-4 text-white">Top Skills</h3>
               <div className="space-y-2 text-sm text-blue-100">
-                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-yellow-300 rounded-full mr-2"></span>Positive Employee Relations</p>
-                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-pink-300 rounded-full mr-2"></span>Compliance Management</p>
-                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-cyan-300 rounded-full mr-2"></span>Vendor Management</p>
+                <p className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-yellow-300 rounded-full mr-2"></span>
+                  Positive Employee Relations
+                </p>
+                <p className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-pink-300 rounded-full mr-2"></span>
+                  Compliance Management
+                </p>
+                <p className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-cyan-300 rounded-full mr-2"></span>
+                  Vendor Management
+                </p>
               </div>
             </div>
 
@@ -123,7 +141,10 @@ export default function Index() {
                 <Award className="w-5 h-5" />
                 Certifications
               </h3>
-              <p className="text-sm text-blue-100 flex items-center"><span className="w-1.5 h-1.5 bg-yellow-300 rounded-full mr-2"></span>HR Analytics</p>
+              <p className="text-sm text-blue-100 flex items-center">
+                <span className="w-1.5 h-1.5 bg-yellow-300 rounded-full mr-2"></span>
+                HR Analytics
+              </p>
             </div>
           </div>
         </div>
@@ -140,31 +161,43 @@ export default function Index() {
             <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4 leading-tight bounce-in">
               Surbhi Prajapati
             </h1>
-            <p className="text-xl md:text-2xl bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-bold mb-3 leading-relaxed fade-in-up" style={{animationDelay: '0.2s'}}>
+            <p
+              className="text-xl md:text-2xl bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-bold mb-3 leading-relaxed fade-in-up"
+              style={{ animationDelay: "0.2s" }}
+            >
               Building People-First Cultures
             </p>
-            <p className="text-lg text-muted-foreground mb-3 fade-in-up" style={{animationDelay: '0.4s'}}>
+            <p
+              className="text-lg text-muted-foreground mb-3 fade-in-up"
+              style={{ animationDelay: "0.4s" }}
+            >
               HR Executive @ Appyzie | Certified HR Analytics
             </p>
-            <div className="flex gap-2 text-muted-foreground text-sm fade-in-up" style={{animationDelay: '0.6s'}}>
+            <div
+              className="flex gap-2 text-muted-foreground text-sm fade-in-up"
+              style={{ animationDelay: "0.6s" }}
+            >
               <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
               <span>Jaipur, Rajasthan, India</span>
             </div>
           </div>
 
           {/* Professional Summary */}
-          <section className="mb-12 lg:mb-16 fade-in-up" style={{animationDelay: '0.3s'}}>
+          <section
+            className="mb-12 lg:mb-16 fade-in-up"
+            style={{ animationDelay: "0.3s" }}
+          >
             <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 border border-border hover-lift group relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-blue-100 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
               <h2 className="text-3xl font-bold text-primary mb-5 relative z-10">
                 Professional Summary
               </h2>
               <p className="text-foreground leading-relaxed text-lg space-y-4 relative z-10">
-                Passionate HR professional with expertise in building and managing
-                high-performing teams. Specialized in full-cycle recruitment,
-                employee engagement, and strategic HR operations. Committed to
-                creating people-first cultures that drive organizational success
-                and employee satisfaction.
+                Passionate HR professional with expertise in building and
+                managing high-performing teams. Specialized in full-cycle
+                recruitment, employee engagement, and strategic HR operations.
+                Committed to creating people-first cultures that drive
+                organizational success and employee satisfaction.
               </p>
             </div>
           </section>
@@ -172,13 +205,23 @@ export default function Index() {
           <div className="section-divider"></div>
 
           {/* Skills Section */}
-          <section className="mb-12 lg:mb-16 fade-in-up" style={{animationDelay: '0.4s'}}>
-            <h2 className="text-3xl font-bold text-primary mb-8 bounce-in" style={{animationDelay: '0.5s'}}>
+          <section
+            className="mb-12 lg:mb-16 fade-in-up"
+            style={{ animationDelay: "0.4s" }}
+          >
+            <h2
+              className="text-3xl font-bold text-primary mb-8 bounce-in"
+              style={{ animationDelay: "0.5s" }}
+            >
               Core Competencies
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {skills.map((skill, index) => (
-                <div key={index} className="skill-badge hover-lift" style={{animationDelay: `${0.6 + index * 0.1}s`}}>
+                <div
+                  key={index}
+                  className="skill-badge hover-lift"
+                  style={{ animationDelay: `${0.6 + index * 0.1}s` }}
+                >
                   {skill}
                 </div>
               ))}
@@ -188,13 +231,23 @@ export default function Index() {
           <div className="section-divider"></div>
 
           {/* Experience Section */}
-          <section className="mb-12 lg:mb-16 fade-in-up" style={{animationDelay: '0.5s'}}>
-            <h2 className="text-3xl font-bold text-primary mb-8 bounce-in" style={{animationDelay: '0.6s'}}>
+          <section
+            className="mb-12 lg:mb-16 fade-in-up"
+            style={{ animationDelay: "0.5s" }}
+          >
+            <h2
+              className="text-3xl font-bold text-primary mb-8 bounce-in"
+              style={{ animationDelay: "0.6s" }}
+            >
               Professional Experience
             </h2>
             <div className="space-y-10">
               {experience.map((job, index) => (
-                <div key={index} className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 group relative overflow-hidden" style={{animationDelay: `${0.7 + index * 0.15}s`}}>
+                <div
+                  key={index}
+                  className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 group relative overflow-hidden"
+                  style={{ animationDelay: `${0.7 + index * 0.15}s` }}
+                >
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-blue-100 opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
                   <div className="relative z-10">
                     <h3 className="text-2xl font-bold text-primary mb-1 group-hover:text-secondary transition-colors duration-300">
@@ -237,11 +290,20 @@ export default function Index() {
           <div className="section-divider"></div>
 
           {/* Education Section */}
-          <section className="mb-12 lg:mb-16 fade-in-up" style={{animationDelay: '1s'}}>
-            <h2 className="text-3xl font-bold text-primary mb-8 bounce-in" style={{animationDelay: '1.1s'}}>
+          <section
+            className="mb-12 lg:mb-16 fade-in-up"
+            style={{ animationDelay: "1s" }}
+          >
+            <h2
+              className="text-3xl font-bold text-primary mb-8 bounce-in"
+              style={{ animationDelay: "1.1s" }}
+            >
               Education
             </h2>
-            <div className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 group relative overflow-hidden" style={{animationDelay: '1.2s'}}>
+            <div
+              className="experience-card bg-white rounded-lg p-6 border border-border hover:border-secondary/50 group relative overflow-hidden"
+              style={{ animationDelay: "1.2s" }}
+            >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-blue-100 opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors duration-300">
@@ -259,14 +321,27 @@ export default function Index() {
           </section>
 
           {/* Footer */}
-          <div className="pt-12 mt-12 border-t border-border text-center fade-in-up" style={{animationDelay: '1.3s'}}>
-            <p className="text-muted-foreground text-sm mb-4">© 2025 Surbhi Prajapati. All rights reserved.</p>
+          <div
+            className="pt-12 mt-12 border-t border-border text-center fade-in-up"
+            style={{ animationDelay: "1.3s" }}
+          >
+            <p className="text-muted-foreground text-sm mb-4">
+              © 2025 Surbhi Prajapati. All rights reserved.
+            </p>
             <div className="flex justify-center gap-6">
-              <a href="mailto:prajapatisurbhi8@gmail.com" className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-all duration-300 hover:scale-110 hover-lift">
+              <a
+                href="mailto:prajapatisurbhi8@gmail.com"
+                className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-all duration-300 hover:scale-110 hover-lift"
+              >
                 <Mail className="w-4 h-4" />
                 Email
               </a>
-              <a href="https://www.linkedin.com/in/surbhiprajapati-4a5589238" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-all duration-300 hover:scale-110 hover-lift">
+              <a
+                href="https://www.linkedin.com/in/surbhiprajapati-4a5589238"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-secondary hover:text-accent font-semibold transition-all duration-300 hover:scale-110 hover-lift"
+              >
                 <Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
