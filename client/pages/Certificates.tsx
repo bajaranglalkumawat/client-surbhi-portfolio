@@ -105,18 +105,6 @@ export default function Certificates() {
                     ))}
                   </div>
                 </div>
-
-                {/* Actions */}
-                <div className="flex gap-3">
-                  <button className="flex-1 px-4 py-2 bg-muted text-muted-foreground font-semibold rounded-lg hover:bg-muted/80 transition-colors flex items-center justify-center gap-2 group">
-                    <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-                    Certificate
-                  </button>
-                  <button className="flex-1 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2 group">
-                    <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-                    Verify
-                  </button>
-                </div>
               </div>
             </div>
           ))}
