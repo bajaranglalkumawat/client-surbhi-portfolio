@@ -59,37 +59,40 @@ export default function Contact() {
         {/* Contact Info Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {/* Email Card */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift scale-in group overflow-hidden relative" style={{animationDelay: '0.3s'}}>
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:rotate-in transition-transform duration-500">
               <Mail className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">Email</h3>
+            <h3 className="text-xl font-bold text-foreground mb-2 relative z-10">Email</h3>
             <a
               href="mailto:prajapatisurbhi8@gmail.com"
-              className="text-purple-600 hover:text-purple-700 font-semibold"
+              className="text-purple-600 hover:text-purple-700 font-semibold transition-colors duration-300 relative z-10"
             >
               prajapatisurbhi8@gmail.com
             </a>
           </div>
 
           {/* Phone Card */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift scale-in group overflow-hidden relative" style={{animationDelay: '0.4s'}}>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4 group-hover:rotate-in transition-transform duration-500">
               <Phone className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">Phone</h3>
-            <p className="text-muted-foreground">Available for calls</p>
-            <p className="text-blue-600 font-semibold">Contact via email</p>
+            <h3 className="text-xl font-bold text-foreground mb-2 relative z-10">Phone</h3>
+            <p className="text-muted-foreground relative z-10">Available for calls</p>
+            <p className="text-blue-600 font-semibold relative z-10">Contact via email</p>
           </div>
 
           {/* Location Card */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mb-4">
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift scale-in group overflow-hidden relative" style={{animationDelay: '0.5s'}}>
+            <div className="absolute inset-0 bg-gradient-to-br from-teal-100 to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+            <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mb-4 group-hover:rotate-in transition-transform duration-500">
               <MapPin className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">Location</h3>
-            <p className="text-muted-foreground">Jaipur, Rajasthan</p>
-            <p className="text-teal-600 font-semibold">India</p>
+            <h3 className="text-xl font-bold text-foreground mb-2 relative z-10">Location</h3>
+            <p className="text-muted-foreground relative z-10">Jaipur, Rajasthan</p>
+            <p className="text-teal-600 font-semibold relative z-10">India</p>
           </div>
         </div>
 
