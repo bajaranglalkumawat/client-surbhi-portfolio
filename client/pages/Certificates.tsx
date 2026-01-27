@@ -59,10 +59,11 @@ export default function Certificates() {
 
         {/* Certificates Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {certificates.map((cert) => (
+          {certificates.map((cert, index) => (
             <div
               key={cert.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 scale-in group"
+              style={{animationDelay: `${0.3 + index * 0.15}s`}}
             >
               {/* Certificate Header with Gradient */}
               <div className={`bg-gradient-to-r ${cert.color} p-8 text-white`}>
