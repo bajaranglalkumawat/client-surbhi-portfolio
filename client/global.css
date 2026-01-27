@@ -134,14 +134,23 @@
 
 @layer components {
   .skill-badge {
-    @apply inline-block px-3 py-1 rounded-full bg-muted text-muted-foreground text-sm font-medium;
+    @apply inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-accent/10 to-secondary/10 text-muted-foreground text-sm font-semibold border border-accent/20 hover:border-accent/40 hover:shadow-md hover:scale-105 transition-all duration-200 cursor-default;
   }
 
   .section-divider {
-    @apply my-8 md:my-12 border-t border-border;
+    @apply my-8 md:my-12 h-px bg-gradient-to-r from-transparent via-border to-transparent;
   }
 
   .portfolio-link {
-    @apply text-accent hover:underline transition-all;
+    @apply text-secondary font-semibold hover:text-accent transition-all duration-200 hover:underline;
+  }
+
+  .experience-card {
+    @apply border-l-4 border-accent pl-6 pb-8 relative transition-all duration-300;
+  }
+
+  .experience-card::before {
+    content: '';
+    @apply absolute -left-3 top-0 w-6 h-6 bg-accent rounded-full shadow-lg;
   }
 }
