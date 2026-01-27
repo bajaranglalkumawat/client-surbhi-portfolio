@@ -129,24 +129,24 @@ export default function Index() {
         </div>
 
         {/* Right Content Area */}
-        <div className="lg:col-span-2 p-8 lg:py-12 lg:px-12">
+        <div className="lg:col-span-2 p-8 lg:py-12 lg:px-12 relative z-10">
           {/* Hero Section */}
-          <div className="mb-12 lg:mb-16">
-            <div className="inline-block mb-4">
-              <span className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 font-semibold text-sm border border-purple-300">
+          <div className="mb-12 lg:mb-16 slide-in-right">
+            <div className="inline-block mb-4 scale-in">
+              <span className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 font-semibold text-sm border border-purple-300 hover:shadow-lg transition-all duration-300 inline-block hover-lift">
                 HR Executive & Talent Management Expert
               </span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4 leading-tight bounce-in">
               Surbhi Prajapati
             </h1>
-            <p className="text-xl md:text-2xl bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-bold mb-3 leading-relaxed">
+            <p className="text-xl md:text-2xl bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-bold mb-3 leading-relaxed fade-in-up" style={{animationDelay: '0.2s'}}>
               Building People-First Cultures
             </p>
-            <p className="text-lg text-muted-foreground mb-3">
+            <p className="text-lg text-muted-foreground mb-3 fade-in-up" style={{animationDelay: '0.4s'}}>
               HR Executive @ Appyzie | Certified HR Analytics
             </p>
-            <div className="flex gap-2 text-muted-foreground text-sm">
+            <div className="flex gap-2 text-muted-foreground text-sm fade-in-up" style={{animationDelay: '0.6s'}}>
               <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
               <span>Jaipur, Rajasthan, India</span>
             </div>
