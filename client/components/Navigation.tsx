@@ -15,7 +15,7 @@ export default function Navigation() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="sticky top-0 z-50 bg-gradient-to-r from-purple-600 via-blue-600 to-teal-600 shadow-lg">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-purple-600 via-blue-600 to-teal-600 shadow-lg hover:shadow-2xl transition-shadow duration-300 animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
