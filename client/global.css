@@ -164,54 +164,54 @@
 
   /* Floating animation */
   .float {
-    animation: float 3s ease-in-out infinite;
+    @apply animate-float;
   }
 
   /* Glow effect */
   .glow-effect {
-    animation: glow-pulse 3s ease-in-out infinite;
+    @apply animate-glow-pulse;
   }
 
   /* Slide in animations */
   .slide-in-left {
-    animation: slide-in-left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    @apply animate-slide-in-left;
   }
 
   .slide-in-right {
-    animation: slide-in-right 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    @apply animate-slide-in-right;
   }
 
   .slide-in-up {
-    animation: slide-in-up 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    @apply animate-slide-in-up;
   }
 
   /* Fade animations */
   .fade-in {
-    animation: fade-in 0.6s ease-in;
+    @apply animate-fade-in;
   }
 
   .fade-in-up {
-    animation: fade-in-up 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    @apply animate-fade-in-up;
   }
 
   /* Bounce animation */
   .bounce-in {
-    animation: bounce-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    @apply animate-bounce-in;
   }
 
   /* Rotate animation */
   .rotate-in {
-    animation: rotate-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    @apply animate-rotate-in;
   }
 
   /* Scale animation */
   .scale-in {
-    animation: scale-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    @apply animate-scale-in;
   }
 
   /* Shimmer animation */
   .shimmer {
-    animation: shimmer 2s infinite;
+    @apply animate-shimmer;
   }
 
   /* Hover lift effect */
