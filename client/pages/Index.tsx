@@ -54,12 +54,23 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-background to-blue-50">
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-8">
         {/* Left Sidebar - Contact Info */}
-        <div className="lg:col-span-1 bg-gradient-to-br from-primary via-primary to-secondary text-primary-foreground p-8 lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto">
+        <div className="lg:col-span-1 bg-gradient-to-br from-purple-600 via-blue-600 to-teal-500 text-primary-foreground p-8 lg:sticky lg:top-20 lg:h-fit lg:overflow-y-auto rounded-b-3xl lg:rounded-2xl">
           <div className="space-y-8">
+            {/* Profile Image */}
+            <div className="flex justify-center">
+              <div className="w-40 h-40 rounded-2xl bg-white/20 backdrop-blur-sm overflow-hidden border-4 border-white/30 shadow-xl">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F14afa3b7489b4bb2bfe41ff4aff8b2e6%2Ff25cd4716bf64c0fafd2c67799ec6191?format=webp&width=800&height=1200"
+                  alt="Surbhi Prajapati"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
             {/* Contact Section */}
             <div>
               <h3 className="text-lg font-bold mb-4 text-white">Contact</h3>
@@ -95,9 +106,9 @@ export default function Index() {
             <div className="pt-6 border-t border-white/20">
               <h3 className="text-lg font-bold mb-4 text-white">Top Skills</h3>
               <div className="space-y-2 text-sm text-blue-100">
-                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-accent rounded-full mr-2"></span>Positive Employee Relations</p>
-                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-accent rounded-full mr-2"></span>Compliance Management</p>
-                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-accent rounded-full mr-2"></span>Vendor Management</p>
+                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-yellow-300 rounded-full mr-2"></span>Positive Employee Relations</p>
+                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-pink-300 rounded-full mr-2"></span>Compliance Management</p>
+                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-cyan-300 rounded-full mr-2"></span>Vendor Management</p>
               </div>
             </div>
 
@@ -107,7 +118,7 @@ export default function Index() {
                 <Award className="w-5 h-5" />
                 Certifications
               </h3>
-              <p className="text-sm text-blue-100 flex items-center"><span className="w-1.5 h-1.5 bg-accent rounded-full mr-2"></span>HR Analytics</p>
+              <p className="text-sm text-blue-100 flex items-center"><span className="w-1.5 h-1.5 bg-yellow-300 rounded-full mr-2"></span>HR Analytics</p>
             </div>
           </div>
         </div>
@@ -117,14 +128,14 @@ export default function Index() {
           {/* Hero Section */}
           <div className="mb-12 lg:mb-16">
             <div className="inline-block mb-4">
-              <span className="px-4 py-2 rounded-full bg-accent/15 text-secondary font-semibold text-sm border border-accent/30">
+              <span className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 font-semibold text-sm border border-purple-300">
                 HR Executive & Talent Management Expert
               </span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4 leading-tight">
               Surbhi Prajapati
             </h1>
-            <p className="text-xl md:text-2xl text-secondary font-semibold mb-3 leading-relaxed">
+            <p className="text-xl md:text-2xl bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent font-bold mb-3 leading-relaxed">
               Building People-First Cultures
             </p>
             <p className="text-lg text-muted-foreground mb-3">
