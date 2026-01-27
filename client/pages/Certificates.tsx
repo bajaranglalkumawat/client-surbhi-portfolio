@@ -53,10 +53,10 @@ export default function Certificates() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="mb-12 fade-in-up">
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4 bounce-in">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-pink-400 via-purple-300 to-cyan-400 bg-clip-text text-transparent mb-4 bounce-in">
             Certifications & Credentials
           </h1>
-          <p className="text-xl text-muted-foreground fade-in-up" style={{animationDelay: '0.2s'}}>
+          <p className="text-xl text-gray-300 fade-in-up" style={{animationDelay: '0.2s'}}>
             Professional development and industry-recognized certifications
           </p>
         </div>
