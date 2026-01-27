@@ -119,9 +119,10 @@ export default function Certificates() {
         </div>
 
         {/* Additional Qualifications */}
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-          <h2 className="text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg"></div>
+        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg hover:shadow-2xl transition-all duration-500 fade-in-up group overflow-hidden relative" style={{animationDelay: '1s'}}>
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-transparent opacity-0 group-hover:opacity-5 transition-opacity duration-500"></div>
+          <h2 className="text-3xl font-bold text-foreground mb-8 flex items-center gap-3 relative z-10 bounce-in" style={{animationDelay: '1.1s'}}>
+            <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg animate-pulse"></div>
             Additional Qualifications
           </h2>
 
