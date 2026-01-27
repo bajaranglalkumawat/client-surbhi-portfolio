@@ -172,13 +172,13 @@ export default function Index() {
           <div className="section-divider"></div>
 
           {/* Skills Section */}
-          <section className="mb-12 lg:mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-8">
+          <section className="mb-12 lg:mb-16 fade-in-up" style={{animationDelay: '0.4s'}}>
+            <h2 className="text-3xl font-bold text-primary mb-8 bounce-in" style={{animationDelay: '0.5s'}}>
               Core Competencies
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {skills.map((skill, index) => (
-                <div key={index} className="skill-badge">
+                <div key={index} className="skill-badge hover-lift" style={{animationDelay: `${0.6 + index * 0.1}s`}}>
                   {skill}
                 </div>
               ))}
