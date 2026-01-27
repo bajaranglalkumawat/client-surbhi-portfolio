@@ -54,76 +54,86 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-blue-50">
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-8">
         {/* Left Sidebar - Contact Info */}
-        <div className="lg:col-span-1 bg-primary text-primary-foreground p-8 lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto">
+        <div className="lg:col-span-1 bg-gradient-to-br from-primary via-primary to-secondary text-primary-foreground p-8 lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto">
           <div className="space-y-8">
             {/* Contact Section */}
             <div>
-              <h3 className="text-lg font-bold mb-4">Contact</h3>
+              <h3 className="text-lg font-bold mb-4 text-white">Contact</h3>
               <div className="space-y-3">
-                <div className="flex gap-3 items-start">
-                  <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                <div className="flex gap-3 items-start group">
+                  <Mail className="w-5 h-5 flex-shrink-0 mt-0.5 group-hover:text-accent transition-colors" />
                   <a
                     href="mailto:prajapatisurbhi8@gmail.com"
-                    className="portfolio-link break-all"
+                    className="portfolio-link break-all text-white hover:text-accent"
                   >
                     prajapatisurbhi8@gmail.com
                   </a>
                 </div>
-                <div className="flex gap-3 items-start">
-                  <Linkedin className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                <div className="flex gap-3 items-start group">
+                  <Linkedin className="w-5 h-5 flex-shrink-0 mt-0.5 group-hover:text-accent transition-colors" />
                   <a
                     href="https://www.linkedin.com/in/surbhiprajapati-4a5589238"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="portfolio-link break-all"
+                    className="portfolio-link break-all text-white hover:text-accent"
                   >
                     www.linkedin.com/in/surbhiprajapati-4a5589238
                   </a>
                 </div>
                 <div className="flex gap-3 items-start">
                   <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <span>Jaipur, Rajasthan, India</span>
+                  <span className="text-blue-100">Jaipur, Rajasthan, India</span>
                 </div>
               </div>
             </div>
 
             {/* Skills Section */}
-            <div>
-              <h3 className="text-lg font-bold mb-4">Top Skills</h3>
-              <div className="space-y-2 text-sm">
-                <p>Positive Employee Relations</p>
-                <p>Compliance Management</p>
-                <p>Vendor Management</p>
+            <div className="pt-6 border-t border-white/20">
+              <h3 className="text-lg font-bold mb-4 text-white">Top Skills</h3>
+              <div className="space-y-2 text-sm text-blue-100">
+                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-accent rounded-full mr-2"></span>Positive Employee Relations</p>
+                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-accent rounded-full mr-2"></span>Compliance Management</p>
+                <p className="flex items-center"><span className="w-1.5 h-1.5 bg-accent rounded-full mr-2"></span>Vendor Management</p>
               </div>
             </div>
 
             {/* Certifications Section */}
-            <div>
-              <h3 className="text-lg font-bold mb-4 flex gap-2 items-center">
+            <div className="pt-6 border-t border-white/20">
+              <h3 className="text-lg font-bold mb-4 flex gap-2 items-center text-white">
                 <Award className="w-5 h-5" />
                 Certifications
               </h3>
-              <p className="text-sm">HR Analytics</p>
+              <p className="text-sm text-blue-100 flex items-center"><span className="w-1.5 h-1.5 bg-accent rounded-full mr-2"></span>HR Analytics</p>
             </div>
           </div>
         </div>
 
         {/* Right Content Area */}
-        <div className="lg:col-span-2 p-8 lg:py-12 max-w-4xl">
+        <div className="lg:col-span-2 p-8 lg:py-12 lg:px-12">
           {/* Hero Section */}
-          <div className="mb-8 lg:mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-3">
+          <div className="mb-12 lg:mb-16">
+            <div className="inline-block mb-4">
+              <span className="px-4 py-2 rounded-full bg-accent/15 text-secondary font-semibold text-sm border border-accent/30">
+                HR Executive & Talent Management Expert
+              </span>
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4 leading-tight">
               Surbhi Prajapati
             </h1>
-            <p className="text-lg md:text-xl text-secondary font-semibold mb-2">
-              HR Executive @ Appyzie | Certified HR Analytics | Ready to Build
-              Your People-First Culture
+            <p className="text-xl md:text-2xl text-secondary font-semibold mb-3 leading-relaxed">
+              Building People-First Cultures
             </p>
-            <p className="text-muted-foreground">Jaipur, Rajasthan, India</p>
+            <p className="text-lg text-muted-foreground mb-3">
+              HR Executive @ Appyzie | Certified HR Analytics
+            </p>
+            <div className="flex gap-2 text-muted-foreground text-sm">
+              <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
+              <span>Jaipur, Rajasthan, India</span>
+            </div>
           </div>
 
           {/* Professional Summary */}
