@@ -9,6 +9,8 @@ export const pool = mysql.createPool({
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
+  enableKeepAlive: true,
+  keepAliveInitialDelayMs: 0,
 });
 
 // Test database connection
@@ -23,3 +25,8 @@ export async function testConnection() {
     return false;
   }
 }
+
+// Non-blocking connection test (runs in background)
+testConnection().catch((err) => {
+  console.warn("Initial connection test failed, will retry on health check:", err);
+});
