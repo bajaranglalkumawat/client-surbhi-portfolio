@@ -13,3 +13,25 @@ services:
         value: 3000
       - key: PING_MESSAGE
         value: pong
+      - key: DB_HOST
+        fromDatabase:
+          name: surbhi-db
+          property: host
+      - key: DB_USER
+        fromDatabase:
+          name: surbhi-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: surbhi-db
+          property: password
+      - key: DB_NAME
+        fromDatabase:
+          name: surbhi-db
+          property: database
+
+  - type: mysql
+    name: surbhi-db
+    plan: free
+    region: singapore
+    ipAllowList: []
