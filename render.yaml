@@ -4,7 +4,7 @@ services:
     env: node
     plan: free
     branch: main
-    buildCommand: npm install && npm run build
+    buildCommand: npm ci && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
@@ -13,4 +13,3 @@ services:
         value: 3000
       - key: PING_MESSAGE
         value: pong
-
